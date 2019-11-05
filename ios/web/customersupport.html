@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body bgcolor="#F6F6F6">
+<script>
+var _liveagent_id = {en: '2c367406', ru: 'df731c8f'};
+
+/*function sendMessage(data) {
+	window.frames.parent.postMessage(data);
+}
+
+function receiveMessage (event) {
+    // provide calls for {"method":"args"}
+    if (event.data.indexOf('{') == 0) {
+		var data = JSON.parse(event.data);
+		var methodKeys = ['setupLiveChat'];
+		Object.keys(data).forEach(function (key) {
+			if (methodKeys.indexOf(key) != -1) key(data[key]);
+		});
+    }
+}*/
+
+function setupLiveChat(lang) {
+    console.log('**setupLiveChat', lang);
+    // Clear old [Live agent] button
+    var oldBtn = document.querySelectorAll('[data-live-agent]')[0];
+    if (oldBtn) oldBtn.parentNode.removeChild(oldBtn);
+    var liveagent_id = _liveagent_id[lang] || _liveagent_id['en'];
+	(function (d, src, c) {
+        var t = d.scripts[d.scripts.length - 1], s = d.createElement('script');
+        s.id = 'la_x2s6df8d';
+        s.async = true;
+        s.src = src;
+        s.onload = s.onreadystatechange = function () {
+            var rs = this.readyState;
+            if (rs && (rs != 'complete') && (rs != 'loaded')) {
+                return;
+            }
+            c(this);
+        };
+        t.parentElement.insertBefore(s, t.nextSibling);
+    })
+    (
+    	document,
+        'https://casinocustomersupport.com/liveagent/scripts/track.js',
+        function (e) {
+            window.liveAgentButton = LiveAgent.createButton(liveagent_id, e);
+            window.liveAgentButton.buttonDiv.setAttribute('data-live-agent', 'true');
+            try {
+                var event = document.createEvent('HTMLEvents');
+                event.initEvent('casinocustomersupport', true, true);
+                document.dispatchEvent(event);
+            } catch (e) {
+                //sendMessage('alert');
+            }
+            setTimeout(function() {
+				//sendMessage('done');
+                location.href = window.liveAgentButton.form.url;
+			}, 1500);
+        }
+    );
+}
+
+onload = function() {
+	//document.addEventListener('message', receiveMessage);
+	var lang = 'en';
+	//TODO: location.search is not available on iOS
+	try {
+        lang = location.search.match(/lang=([a-z]+)/);
+        if (lang.length > 1) lang = lang[1];
+        //else lang = 'en';
+        var liveagent = location.search.match(/liveagent=([a-zA-Z0-9%]+)/);
+        if (liveagent.length > 1) _liveagent_id = JSON.parse(decodeURIComponent(liveagent[1]));
+    } catch (e) {
+        console.log(e.toString());
+    }
+	setTimeout(function() {
+		setupLiveChat(lang);
+	}, 42);
+};
+</script>
+</body>
+</html>

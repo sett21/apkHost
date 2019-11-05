@@ -1,0 +1,23 @@
+{
+  "name": "RNUserAgent",
+  "version": "1.0.4",
+  "summary": "Library that helps you to get mobile application user agent and web view user agent strings.",
+  "description": "Library that helps you to get mobile application user agent and web view user agent strings.",
+  "homepage": "https://github.com/bebnev/react-native-user-agent",
+  "license": "MIT",
+  "authors": {
+    "Bebnev Anton": "bambr.ab@gmail.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "git+https://github.com/bebnev/react-native-user-agent.git"
+  },
+  "source_files": "ios/**/*.{h,m}",
+  "dependencies": {
+    "React": [
+
+    ]
+  }
+}

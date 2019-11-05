@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>Darwin</string>
+	<string>Cocoa</string>
+	<string>LocalAuthentication</string>
+	<string>AVFoundation</string>
+	<string>CommonCrypto</string>
+	<string>jsireact</string>
+	<string>CoreLocation</string>
+	<string>ImageIO</string>
+	<string>cxxreact</string>
+	<string>objc</string>
+	<string>AudioToolbox</string>
+	<string>libwebp</string>
+	<string>SDWebImageWebPCoder</string>
+	<string>ReactCommon</string>
+	<string>Accelerate</string>
+	<string>CoreData</string>
+	<string>MobileCoreServices</string>
+	<string>arpa</string>
+	<string>sys</string>
+	<string>RCTRequired</string>
+	<string>CoreTelephony</string>
+	<string>CoreImage</string>
+	<string>CoreServices</string>
+	<string>netinet6</string>
+	<string>FBLazyVector</string>
+	<string>libkern</string>
+	<string>SDWebImage</string>
+	<string>CoreText</string>
+	<string>WebKit</string>
+	<string>RCTTypeSafety</string>
+	<string>CoreVideo</string>
+	<string>XCTest</string>
+	<string>WatchKit</string>
+	<string>Foundation</string>
+	<string>mach</string>
+	<string>QuartzCore</string>
+	<string>Security</string>
+	<string>Photos</string>
+	<string>AppKit</string>
+	<string>WebImage</string>
+	<string>FBReactNativeSpec</string>
+	<string>netinet</string>
+	<string>AssetsLibrary</string>
+	<string>folly</string>
+	<string>yoga</string>
+	<string>CoreGraphics</string>
+	<string>SystemConfiguration</string>
+	<string>jsi</string>
+	<string>React</string>
+	<string>UIKit</string>
+</array>
+</plist>

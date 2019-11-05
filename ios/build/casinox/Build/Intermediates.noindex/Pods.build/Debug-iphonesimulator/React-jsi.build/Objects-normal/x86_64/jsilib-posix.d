@@ -1,0 +1,6 @@
+dependencies: \
+  /Users/sett21/_work/casinox/node_modules/react-native/ReactCommon/jsi/jsi/jsilib-posix.cpp \
+  /Users/sett21/_work/casinox/ios/Pods/Target\ Support\ Files/React-jsi/React-jsi-prefix.pch \
+  /Users/sett21/_work/casinox/ios/Pods/Headers/Private/React-jsi/jsi/jsilib.h \
+  /Users/sett21/_work/casinox/ios/Pods/Headers/Private/React-jsi/jsi/jsi.h \
+  /Users/sett21/_work/casinox/ios/Pods/Headers/Private/React-jsi/jsi/jsi-inl.h

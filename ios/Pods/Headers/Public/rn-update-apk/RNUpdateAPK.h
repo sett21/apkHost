@@ -1,0 +1,1 @@
+../../../../../node_modules/rn-update-apk/ios/RNUpdateAPK/RNUpdateAPK.h
